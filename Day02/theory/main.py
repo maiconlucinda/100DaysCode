@@ -1,3 +1,6 @@
+#Day 2 - Beginner - Understanding Data Types and How to Manipulate Strings
+
+
 
 #Instead of using the function int, we might also use round
 print(round(8 / 3))
