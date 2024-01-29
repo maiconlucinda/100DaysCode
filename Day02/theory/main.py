@@ -28,10 +28,10 @@ print(type(number_to_string))
 
 
 #Mathematical Operations in Python
-adding = 3 +5
+adding = 3 + 5
 substraction = 7 + 4
 multiplication = 3 * 2
-diviion = 6 / 3 #Division always end up with a float number
+division = 6 / 3 #Division always end up with a float number
 exponents = 2 ** 2
 
 #PRIORITIES
@@ -64,6 +64,14 @@ print(result)
 score = 5 #This is very handy when we have to manipulate one variable based on its previous value.
 score += 4
 print(score)
+
+
+
+
+
+#Remainder, to test if a number can be divided by other number without remainder, we can use the simbol %
+remainder = 80 % 2
+print(f"Remainder {remainder}")
 
 
 
