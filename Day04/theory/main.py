@@ -35,6 +35,9 @@ states_of_america.extend(["Rosiland", "Amandaland", "Ademirland", "Gracieleland"
 
 print(states_of_america)
 
+# To replace an element into our list
+states_of_america[0] = "Bahia"
+print(states_of_america)
 
 
 # Nested List
@@ -43,3 +46,4 @@ vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 
 dirty_dozen = [fruits, vegetables]
 print(dirty_dozen)
+
