@@ -6,13 +6,7 @@ chosen_word = random.choice(word_list)
 print(chosen_word)
 
 
-placeholder = (len(chosen_word) * "_ ")
-print(placeholder)
-
-guess = input("Enter a letter: ").lower()
-
-
-display = ""
+guess = input("Guess a letter: ").lower()
 
 
 
@@ -21,3 +15,14 @@ for letter in chosen_word:
         print("True")
     else:
         print("False")
+
+
+
+placeholder = (len(chosen_word) * "_ ")
+print(placeholder)
+
+
+display = ""
+        
+
+
