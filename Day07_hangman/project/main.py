@@ -16,12 +16,16 @@ print(placeholder)
 guess = input("Guess a letter: ").lower()
 
 
+display = ""
 
 for letter in chosen_word:
+    
     if letter == guess:
-        print("True")
+        display += letter
     else:
-        print("False")
+        display += "_"
+
+print(display)
 
 
         
