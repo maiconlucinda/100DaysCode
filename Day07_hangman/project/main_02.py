@@ -25,7 +25,11 @@ display = ["_"] * word_length
 
 guess = input("Insira a letra desejada: ").lower()
 
-for position in range(word_length):
-    letter = chosen_word[position]
-    if letter == guess:
-        display[position] = letter
+while "_" in display:
+
+    guess = input("Insira a letra desejada: ").lower()
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+    print(display)
