@@ -1,28 +1,38 @@
 import random
+
 word_list = ["aardvark", "baboon", "camel"]
 
 chosen_word = random.choice(word_list)
 print(chosen_word)
 
-# TODO-1: Create a "placeholder" with the same number of blanks as the chosen_word
+
 placeholder = ""
+word_length = len(chosen_word)
+for position in range(word_length):
+    placeholder += "_"
 
-
-for letter in chosen_word:
-    placeholder += "_ "
 print(placeholder)
 
 
-guess = input("Guess a letter: ").lower()
+display = ["_"] * word_length
+letter = ""
+lives = 5
 
-# TODO-2: Create a "display" that puts the guess letter in the right positions and _ in the rest of the string.
-display = ""
+while "_" in display:
+    guess = input("Guess a letter: ").lower()
+
+    for position in range(word_length):
+        letter = chosen_word[position]
+        if letter == guess:
+            display[position] = letter
+        else:
+            lives -= 1
 
 
-for letter in chosen_word:
-    if letter == guess:
-        display += letter
-    else:
-        display += "_"
+    if lives == 0:
+        print("Game over")
+        break
 
-print(display)
+    print(display)
+print("Terminou")
+    
